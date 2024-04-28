@@ -6,7 +6,7 @@ import styles from './CandlestickChart.module.css';
 import UserStocks from './UserStocks';
 
 const fetchData = async (stockSymbol) => {
-  const response = await axios.get(`http://127.0.0.1:5000/stock/${stockSymbol.toUpperCase()}`);
+  const response = await axios.get(`https://mcsbt-integration1.ew.r.appspot.com/stock/${stockSymbol.toUpperCase()}`);
   return response.data;
 };
 

@@ -49,7 +49,7 @@ const UserStocks = ({ userId }) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:5000/user/${userId}`, {
+        axios.get(`https://mcsbt-integration1.ew.r.appspot.com/user/${userId}`, {
             withCredentials: true
         })
         .then(response => {

@@ -12,7 +12,7 @@ const CreateAccount = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     // Make a POST request to the server to create a new account
-    const response = await fetch('http://127.0.0.1:5000/create-user', {
+    const response = await fetch('https://mcsbt-integration1.ew.r.appspot.com/create-user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
