@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Use min-height to ensure it covers at least the whole viewport height */
+}
+
+.header {
+  background-color: blue;
+  padding: 15px;
+  color: white;
+  text-align: left;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* This ensures the chart area grows and pushes the footer down */
+.chartContainer {
+  flex: 1;
+  padding: 0 15px; /* Add padding if needed */
+}
+
+.footer {
+  background-color: blue;
+  color: white;
+  padding: 10px; /* Increase padding to your liking */
+  text-align: center;
+  width: 100%;
+}
